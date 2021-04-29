@@ -3,7 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Rock, Paper, Scissors</title>
+    <title>Rock, Paper, Scissors Game</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>ROCK - PAPER - SCISSORS </h1>
+    </header>
+    <div class="user-input">
+      <input id="text" placeholder="Enter player name"></input>
+      <button onclick="selectText()">Start</button>
+    </div>
+    <div class="score-board">
+      <div id="user-label" class="badge">user</div>
+      <div id="computer-label" class="badge">computer</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span> 
+    </div>
+
+    <div class="result">
+      <p>Paper beats Rock. You WIN!</p>
+    </div> 
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="rock.png" alt="">
+      </div>
+      <div class="choice" id="paper">
+        <img src="paper.PNG" alt="">
+      </div>
+      <div class="choice" id="scissors">
+        <img src="scissors.PNG" alt="">
+      </div>
+    </div>
+    <p id="action-message">Have a go at it. What's your choice?</p>
+  <script src="main.js"></script>
+  </body>
+  
 </html>
